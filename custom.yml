@@ -11,6 +11,10 @@ feeds:
     uri: https://github.com/kenzok8/small-package.git
     branch: main
     revision: d759aa34c94b415e47c5677146c7e01bef927b5b
+ - name: NueXini_Packages
+    uri: https://github.com/NueXini/NueXini_Packages.git
+    branch: main
+    revision: 086bc6e209b5cb50cd1e225c9aa702020ffd3cff
 packages:
   - luci-theme-argon
   - luci-app-argon-config
@@ -27,6 +31,43 @@ packages:
   - luci-app-ttyd
   - luci-app-serverchan
   - luci-app-transmission
+    - kmod-hwmon-pwmfan
+  - kmod-gl-sdk4-fan
+  - wireless-regdb
+  - wget-ssl
+  - kmod-wireguard-backport
+  - luci-app-nlbwmon
+  - luci-app-wrtbwmon
+  - luci-app-diskman
+  - luci-app-watchcat
+  - luci-app-ramfree
+  - luci-app-eqos
+  - luci-app-accesscontrol
+  - luci-app-arpbind
+  - luci-app-upnp
+  - luci-app-firewall
+  - luci-app-ddns
+  - luci-app-wol
+  - luci-app-autoreboot
+  - luci-app-fileassistant
+  - luci-theme-argon
+  - luci-app-argon-config
+  - luci-app-openclash
+  - luci-app-zerotier
+  - luci-app-adguardhome
+  - luci-app-pushbot
+  - luci-app-turboacc
+  - openssh-sftp-server
+  - luci-compat
+  - luci-app-uhttpd
+  - vsftpd
+  - luci-app-serverchan
+  - luci-app-vlmcsd
+  - luci-app-store
+  - luci-app-cpufreq
+  - luci-app-vsftpd
+  - luci-app-aria2
+  - ariang
 diffconfig: |
   CONFIG_PACKAGE_wpad-basic=n
   CONFIG_PACKAGE_wpad=n
