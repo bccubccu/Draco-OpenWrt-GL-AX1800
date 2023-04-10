@@ -80,11 +80,11 @@ case $profile in
         ln -s $base/gl-infra-builder/wlan-ap/openwrt ~/openwrt && cd ~/openwrt
         if [[ $ui == true  ]]; then
             if [[ $profile == *ax1800* ]]; then
-                cp ~/glinet/pkg_config/gl_pkg_config_ax1800.mk  ~/glinet/ipq60xx/gl_pkg_config.mk
-                cp ~/glinet/pkg_config/glinet_depends_ax1800.yml  ./profiles/glinet_depends.yml
+                 cp ./glinet4.x/pkg_config/gl_pkg_config_axt1800.mk  ./glinet4.x/ipq60xx/gl_pkg_config.mk
+                cp ./glinet4.x/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
             else
-                cp ~/glinet/pkg_config/gl_pkg_config_axt1800.mk  ~/glinet/ipq60xx/gl_pkg_config.mk
-                cp ~/glinet/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
+                 cp ./glinet4.x/pkg_config/gl_pkg_config_axt1800.mk  ./glinet4.x/ipq60xx/gl_pkg_config.mk
+                cp ./glinet4.x/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
             fi
             ./scripts/gen_config.py glinet_depends custom
         else
