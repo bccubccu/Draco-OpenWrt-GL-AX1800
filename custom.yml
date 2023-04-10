@@ -1,4 +1,7 @@
 feeds:
+  - name: glinet
+    uri: https://gitlab.com/gl.sdk4.0/gl.router/gl-sdk4-collect.git
+    revision: 7efc2ecac63dc7a8d5d7c0d78e92bedeb9df2253
   - name: luci
     uri: https://github.com/openwrt/luci.git
     revision: 1c3b32dc1bec15e3076a447762b1c4f94eb75fb7
