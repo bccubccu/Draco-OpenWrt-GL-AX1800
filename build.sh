@@ -83,8 +83,8 @@ case $profile in
                  cp ./glinet4.x/pkg_config/gl_pkg_config_axt1800.mk  ./glinet4.x/ipq60xx/gl_pkg_config.mk
                 cp ./glinet4.x/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
             else
-                 cp ./glinet4.x/pkg_config/gl_pkg_config_axt1800.mk  ./glinet4.x/ipq60xx/gl_pkg_config.mk
-                cp ./glinet4.x/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
+                 cp $base/glinet/pkg_config/gl_pkg_config_axt1800.mk  $base/glinet/ipq60xx/gl_pkg_config.mk
+                cp $base/glinet/pkg_config/glinet_depends_axt1800.yml  $base/gl-infra-builder/profiles/glinet_depends.yml
             fi
             ./scripts/gen_config.py glinet_depends custom
         else
