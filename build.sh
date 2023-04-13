@@ -24,7 +24,7 @@ if [ ! -n "$ui" ]; then
 fi
 
 if [[ $ui == true ]]; then
-    git clone --depth=1 https://github.com/gl-inet/glinet4.x.git ~/glinet
+    git clone --depth=1 https://github.com/gl-inet/glinet4.x.git $base/glinet
 fi
 
 echo "Start..."
