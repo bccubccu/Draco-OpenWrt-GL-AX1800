@@ -25,6 +25,8 @@ fi
 
 if [[ $ui == true ]]; then
     git clone --depth=1 https://github.com/gl-inet/glinet4.x.git $base/glinet
+./scripts/feeds update -a 
+./scripts/feeds install -a
 fi
 
 echo "Start..."
