@@ -89,9 +89,9 @@ case $profile in
                  cp $base/glinet/pkg_config/gl_pkg_config_axt1800.mk  $base/glinet/ipq60xx/gl_pkg_config.mk
                 cp $base/glinet/pkg_config/glinet_depends_axt1800.yml  $base/gl-infra-builder/profiles/glinet_depends.yml
             fi
-            ./scripts/gen_config.py glinet_depends custom
+            $base/gl-infra-builder/scripts/gen_config.py glinet_depends custom
         else
-            ./scripts/gen_config.py $profile openwrt_common glinet_nas luci custom
+            $base/gl-infra-builder/scripts/gen_config.py $profile openwrt_common glinet_nas luci custom
         fi
         build_firmware $ui ipq60xx && copy_file ~/openwrt/bin/targets/*/*
     ;;
