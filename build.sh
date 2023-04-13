@@ -77,8 +77,8 @@ case $profile in
         if [[ $profile == *5-4* ]]; then
             python3 setup.py -c configs/config-wlan-ap-5.4.yml
         else
-         cd $base/gl-infra-builder
-            python3 setup.py -c configs/config-wlan-ap.yml
+         
+            python3 $base/gl-infra-builder/setup.py -c $base/gl-infra-builder/configs/config-wlan-ap.yml
         fi
         ln -s $base/gl-infra-builder/wlan-ap/openwrt ~/openwrt && cd ~/openwrt
         if [[ $ui == true  ]]; then
